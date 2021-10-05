@@ -56,8 +56,8 @@ The transformer is trained with dropout of 0.1, and the whole model is trained w
 
 
 ## Evaluation
-To evaluate Stable-Pix2Seq R50 on COCO val5k with a multiple GPU run:
+To evaluate Stable-Pix2Seq R50 on COCO val5k with multiple GPU run:
 ```
-python main.py --batch_size 2 --no_aux_loss --eval --resume https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth --coco_path /path/to/coco
+python -m torch.distributed.launch --master_port=3142 --nproc_per_node 8 --use_env main.py --coco_path ./coco/ --batch_size 4 --eval --resume checkpoint.pth
 ```
 
