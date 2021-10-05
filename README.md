@@ -45,8 +45,8 @@ To train baseline Stable-Pix2Seq on a single node with 8 gpus for 300 epochs run
 ```
 python -m torch.distributed.launch --master_port=3141 --nproc_per_node 8 --use_env main.py --coco_path ./coco/ --batch_size 4 --lr 0.0005
 ```
-A single epoch takes 28 minutes, so 300 epoch training
-takes around 6 days on a single machine with 8 V100 cards.
+A single epoch takes 40 minutes on 8 V100, so 300 epoch training
+takes around 9 days on a single machine with 8 V100 cards.
 
 
 We train DETR with AdamW setting learning rate using a linear warmup and decay schedule. Due to batch repeat, the real barch size is 64. 
