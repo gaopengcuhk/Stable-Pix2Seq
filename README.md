@@ -56,6 +56,8 @@ Horizontal flips, scales and crops are used for augmentation.
 Images are rescaled to have min size 800 and max size 1333.
 The transformer is trained with dropout of 0.1, and the whole model is trained with grad clip of 0.1.
 
+Please use the learning rate 0.0005 with causion. It is tested on batch 198. 
+
 
 ## Evaluation
 To evaluate Stable-Pix2Seq R50 on COCO val5k with multiple GPU run:
