@@ -48,7 +48,7 @@ python -m torch.distributed.launch --master_port=3141 --nproc_per_node 8 --use_e
 A single epoch takes 50 minutes on 8 V100, so 300 epoch training
 takes around 10 days on a single machine with 8 V100 cards.
 
-**Why slower than DETR ? and Unofficial-Pix2Seq**. Stable-Pix2Seq use batch repeat which double the training time. Besides, stable-pix2seq use 1333 image resolution will the time report in unofficial-pix2seq is trained on low resolution 512. 
+**Why slower than DETR and Unofficial-Pix2Seq?**. Stable-Pix2Seq use batch repeat which double the training time. Besides, stable-pix2seq use 1333 image resolution will the time report in unofficial-pix2seq is trained on low resolution 512. 
 
 
 We train DETR with AdamW setting learning rate using a linear warmup and decay schedule. Due to batch repeat, the real barch size is 64. 
