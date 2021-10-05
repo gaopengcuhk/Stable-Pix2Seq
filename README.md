@@ -63,3 +63,6 @@ To evaluate Stable-Pix2Seq R50 on COCO val5k with multiple GPU run:
 python -m torch.distributed.launch --master_port=3142 --nproc_per_node 8 --use_env main.py --coco_path ./coco/ --batch_size 4 --eval --resume checkpoint.pth
 ```
 
+## Acknowledgement
+DETR 
+
