@@ -6,7 +6,7 @@ A full-fledged version of Pix2Seq
 **Difference between Pix2Seq**. In sequence augmentation, we only augment random bounding box while original paper will mix with virual box from ground truth plus noise. Pix2seq also use input sequence dropout to regularize the training process. 
 
 # Usage - Object detection
-There are no extra compiled components in DETR and package dependencies are minimal,
+There are no extra compiled components in Stable-Pix2Seq and package dependencies are minimal,
 so the code is very simple to use. We provide instructions how to install dependencies via conda.
 First, clone the repository locally:
 ```
@@ -41,7 +41,7 @@ path/to/coco/
 ```
 
 ## Training
-To train baseline DETR on a single node with 8 gpus for 300 epochs run:
+To train baseline Stable-Pix2Seq on a single node with 8 gpus for 300 epochs run:
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --coco_path /path/to/coco 
 ```
@@ -58,13 +58,8 @@ The transformer is trained with dropout of 0.1, and the whole model is trained w
 
 
 ## Evaluation
-To evaluate DETR R50 on COCO val5k with a single GPU run:
+To evaluate Stable-Pix2Seq R50 on COCO val5k with a multiple GPU run:
 ```
 python main.py --batch_size 2 --no_aux_loss --eval --resume https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth --coco_path /path/to/coco
 ```
-We provide results for all DETR detection models in this
-[gist](https://gist.github.com/szagoruyko/9c9ebb8455610958f7deaa27845d7918).
-Note that numbers vary depending on batch size (number of images) per GPU.
-Non-DC5 models were trained with batch size 2, and DC5 with 1,
-so DC5 models show a significant drop in AP if evaluated with more
-than 1 image per GPU.
+
