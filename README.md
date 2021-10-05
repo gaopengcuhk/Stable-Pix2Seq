@@ -10,7 +10,7 @@ There are no extra compiled components in Stable-Pix2Seq and package dependencie
 so the code is very simple to use. We provide instructions how to install dependencies via conda.
 First, clone the repository locally:
 ```
-git clone https://github.com/facebookresearch/detr.git
+git clone https://github.com/gaopengcuhk/Stable-Pix2Seq.git
 ```
 Then, install PyTorch 1.5+ and torchvision 0.6+:
 ```
