@@ -129,6 +129,10 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
             output_dir=os.path.join(output_dir, "panoptic_eval"),
         )
     for samples, targets in data_loader:
+        batch = len(targets)
+        targets = targets[: batch // 2]
+        samples.mask = samples.mask[: batch // 2, :, :]
+        samples.tensors = samples.tensors[: batch // 2, :, :, :]
         samples = samples.to(device)
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
         seq = torch.ones(len(targets), 1).to(samples.mask) * 2001
