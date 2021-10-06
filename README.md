@@ -23,11 +23,6 @@ pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=Pyth
 ```
 That's it, should be good to train and evaluate detection models.
 
-(optional) to work with panoptic install panopticapi:
-```
-pip install git+https://github.com/cocodataset/panopticapi.git
-```
-
 ## Data preparation
 
 Download and extract COCO 2017 train and val images with annotations from
