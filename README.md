@@ -1,3 +1,6 @@
+# Bug Fix Oct,12,2021.
+Previous dataset use 512 image resolution rather than 1333 image resolution. New data loader has been updated. 
+
 # Stable-Pix2Seq
 A full-fledged version of Pix2Seq
 
