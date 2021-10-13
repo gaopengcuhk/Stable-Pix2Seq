@@ -41,7 +41,7 @@ path/to/coco/
 ## Training
 To train baseline Stable-Pix2Seq on a single node with 8 gpus for 300 epochs run:
 ```
-python -m torch.distributed.launch --master_port=3141 --nproc_per_node 8 --use_env main.py --coco_path ./coco/ --batch_size 4 --lr 0.0005
+python -m torch.distributed.launch --master_port=3141 --nproc_per_node 8 --use_env main.py --coco_path ./coco/ --batch_size 4 --lr 0.0005 --output_dir ./output/
 ```
 A single epoch takes 50 minutes on 8 V100, so 300 epoch training
 takes around 10 days on a single machine with 8 V100 cards.
