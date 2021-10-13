@@ -1,6 +1,8 @@
 # Bug Fix Oct,12,2021.
 Previous data loader uses 512 image resolution rather than 1333 image resolution. New data loader has been updated. 
 
+# Causion, please choose --output_dir for training. Otherwise, the checkpoint and log will not been stored. 
+
 # Stable-Pix2Seq
 A full-fledged version of Pix2Seq
 
