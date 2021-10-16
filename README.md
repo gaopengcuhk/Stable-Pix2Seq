@@ -3,6 +3,9 @@ Previous data loader uses 512 image resolution rather than 1333 image resolution
 
 # Causion, please choose --output_dir for training. Otherwise, the checkpoint and log will not been stored. 
 
+# New Data augmentation following Pix2Seq
+[Large Jitter and Color Augmenatation](https://github.com/poodarchu/Stable-Pix2Seq/commit/039891839c3870114ab275a357dcd14cf8a844b1) still under testing. Results will be shared later.
+
 # Stable-Pix2Seq
 A full-fledged version of Pix2Seq
 
