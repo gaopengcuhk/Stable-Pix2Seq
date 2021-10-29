@@ -12,7 +12,7 @@ This augmentation contain serious bug. We are rewriting a new data augmentation 
 
 
 # News on new augmentation (Oct 29)
-With new augmentation, Stable-Pix2seq can achieve 36 mAP at 256 epoch. Beam search will additionly improve 1-2 mAP. The estimated mAP is 37-38mAP at 256 epoch.
+With new augmentation, Stable-Pix2seq can achieve 36 mAP at 256 epoch. Beam search will additionly improve 1-2 mAP. The estimated mAP is 37-38mAP at 256 epoch. The new augmentation will be released in several weeks. 
 
 
 # Stable-Pix2Seq
