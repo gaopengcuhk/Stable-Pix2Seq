@@ -9,6 +9,12 @@ please choose --output_dir for training. Otherwise, the checkpoint and log will 
 
 # News on [Large Jitter and Color Augmenatation](https://github.com/poodarchu/Stable-Pix2Seq/commit/039891839c3870114ab275a357dcd14cf8a844b1) (Oct 18)
 This augmentation contain serious bug. We are rewriting a new data augmentation pipeline and will release it after fully testing. 
+
+
+# News on new augmentation (Oct 29)
+With new augmentation, Stable-Pix2seq can achieve 36 mAP at 256 epoch. Beam search will additionly improve 1-2 mAP. The estimated mAP is 37-38mAP at 256 epoch.
+
+
 # Stable-Pix2Seq
 A full-fledged version of Pix2Seq
 
