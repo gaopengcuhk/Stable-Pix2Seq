@@ -15,7 +15,7 @@ This augmentation contain serious bug. We are rewriting a new data augmentation 
 With new augmentation, Stable-Pix2seq can achieve 36 mAP at 256 epoch. Beam search will additionly improve 1-2 mAP. The estimated mAP is 37-38mAP at 256 epoch. The new augmentation will be released in several weeks. 
 
 # Final pix2seq with pretrained model is released(Nov 3)
-[Pretrained Pix2Seq](https://github.com/gaopengcuhk/Pretrained-Pix2Seq)
+[Pretrained Pix2Seq](https://github.com/gaopengcuhk/Pretrained-Pix2Seq). Pretrain Pix2seq repo contain many differences with this version of release which can improve mAP by 7-10. That's the reason we decide to recreate a new repo holding new code and pre-trained model.
 
 
 # Stable-Pix2Seq
